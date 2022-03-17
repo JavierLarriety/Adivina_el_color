@@ -20,15 +20,13 @@ h2.textContent = `RGB: (${randomColor})`;
 
 const liListElement = document.querySelectorAll(".cuadrado");
 
-const randomBlocks = () => {
-  console.log("Hola");
-  for (const block of liListElement) {
-    block.style.backgroundColor = `
+const cuadradosPintados = () => {
+  for (const cuadrado of liListElement) {
+    cuadrado.style.backgroundColor = `
     rgb(${getRandom(255)}, ${getRandom(255)}, ${getRandom(255)})`;
   }
 };
-
-console.log(liListElement);
+cuadradosPintados();
 
 //Juego con contador aciertos y fallos
 
@@ -54,12 +52,8 @@ function juego() {
 
 //Definir cuadradoClickado
 
-const cuadrado = document.querySelectorAll(".cuadrado");
-const cuadradoClickado = cuadrado.addEventListener("click");
-
 //Al darle a juego nuevo resetear
 
-let resetButton = document.getElementById("reset");
 const clickReset = () => {
   window.location.reload(); //preguntarle a Stefano si esto está bien así o hay algo mejor
 };
