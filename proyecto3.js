@@ -59,5 +59,8 @@ const cuadradoClickado = cuadrado.addEventListener("click");
 
 //Al darle a juego nuevo resetear
 
-const resetButton = document.getElementById("reset");
-resetButton = document.addEventListener("click");
+let resetButton = document.getElementById("reset");
+const clickReset = () => {
+  window.location.reload(); //preguntarle a Stefano si esto está bien así o hay algo mejor
+};
+resetButton = document.addEventListener("click", clickReset);
