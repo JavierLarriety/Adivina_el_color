@@ -38,7 +38,7 @@ function juego() {
   let contadorAciertos = aciertos;
   let contadorFallos = fallos;
   let aciertosEstado = document.querySelector(".hits");
-  let fallosEstado = document.querySelector(".hits");
+  let fallosEstado = document.querySelector(".failures");
   if ((cuadradoClickado == randomColor, contadorAciertos++)) {
     message.textContent = "¡Acertaste!";
     aciertosEstado.textContent = `${contadorAciertos}/3`;
@@ -46,7 +46,7 @@ function juego() {
     message.textContent = "¡Ganaste!";
   } else if ((cuadradoClickado !== randomColor, contadorFallos++)) {
     message.textContent = "Fallaste!";
-    fallosEstado.textContent = `${contadorFallos}(3)`;
+    fallosEstado.textContent = `${contadorFallos}/3`;
   } else if (contadorFallos === 3) {
     message.textContent = "¡Perdiste,vuelve a intentarlo!";
   }
