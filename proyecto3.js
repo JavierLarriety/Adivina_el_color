@@ -7,6 +7,11 @@ const State = {
 
 const liListElement = document.querySelectorAll(".cuadrado");
 const ulElement = document.querySelector("ul");
+const messageElement = document.querySelector("#message");
+const hits = document.querySelector(".hits");
+const failures = document.querySelector(".failures");
+let aciertos = 0;
+let fallos = 0;
 
 const getRandom = (max) => {
   return Math.floor(Math.random() * (max + 1));
