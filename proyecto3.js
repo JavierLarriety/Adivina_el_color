@@ -45,13 +45,31 @@ main();
 ulElement.addEventListener("click", (e) => {
   const target = e.target;
   if (target.matches("li")) {
-    const selecionUser = Number(target.getAttribute("data-index"));
+    const selectionUser = Number(target.getAttribute("data-index"));
     console.log("TARGET", target);
-    console.log(selecionUser);
-    if (selecionUser === State.colorGanador) {
-      console.log("Ganaste chaval!");
+    console.log(selectionUser);
+    if (aciertos === 2) {
+      // aciertos++;
+      messageElement.textContent = "¡Victoria!";
+      hits.textContent = `ACIERTOS:${aciertos}/3`;
+      return;
+      //hay que poner una función o algo aquí que pare no deje seguir jugando
+    } else if (selectionUser === State.colorGanador) {
+      aciertos++;
+      messageElement.textContent = "¡Has acertado!";
+      hits.textContent = `ACIERTOS:${aciertos}/3`;
+      console.log("Aciertos:", aciertos);
+    } else if (fallos === 2) {
+      // fallos++;
+      messageElement.textContent = "¡Perdiste,vuelve a intentarlo!";
+      failures.textContent = `FALLOS:${fallos}/3`;
+      return;
+      //aquí también habría que poner esa función o ese algo para parar el bucle
     } else {
-      console.log("Ententalo otra vez");
+      fallos++;
+      messageElement.textContent = "¡Has fallado!";
+      failures.textContent = `FALLOS:${fallos}/3`;
+      console.log("Fallos:", fallos);
     }
   }
 });
