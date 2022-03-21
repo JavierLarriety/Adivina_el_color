@@ -1,0 +1,67 @@
+body {
+    background-image: url(./sharon-mccutcheon-p203ekCK4Ac-unsplash.jpg)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 2rem;
+    font-size: 1.5rem;
+    color: rgb(250, 234, 7);
+}
+
+ul {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 50%;
+    max-width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    border: 1px solid black;
+    background-color: white;
+    height: 5rem;
+    width: 7rem;
+    margin-top: 1rem;
+}
+
+fieldset {
+    margin: 5rem;
+    margin-top: 1rem;
+    padding: 3rem;
+    text-align: center;
+    border: 3px solid yellow;
+    color: rgb(250, 234, 7);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+input {
+    height: 2rem;
+    width: 15rem;
+}
+
+button {
+    height: 5rem;
+    width: 7rem;
+    margin-top: 3rem;
+    text-align: center;
+    margin: 3rem 15rem;
+    border: 3px solid black;
+    border-radius: 1rem;
+}
