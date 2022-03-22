@@ -1,0 +1,42 @@
+body {
+    background-image: url(./sharon-mccutcheon-p203ekCK4Ac-unsplash.jpg)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1rem;
+    color: yellow;
+    font-family: Lobster;
+    font-size: 3rem;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 2rem;
+    color: yellow;
+    font-size: 1.5rem;
+}
+
+.rules {
+    margin-top: 1rem;
+    background-color: #fff;
+    margin: 3rem;
+    margin-right: 10rem;
+    padding: 2rem;
+}
+
+button {
+    margin: 2rem;
+    margin-left: 11rem;
+    padding: 2rem;
+    font-size: 1rem;
+    border: 0.3rem solid black;
+    border-radius: 1rem;
+}

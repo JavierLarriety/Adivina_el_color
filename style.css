@@ -1,100 +1,113 @@
+body {
+    background-image: url(sharon-mccutcheon-p203ekCK4Ac-unsplash.jpg)
+}
+
 * {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 header {
-  background-color: cornflowerblue;
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 1rem;
+    background-color: cornflowerblue;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
 }
 
 body {
-  background-color: #232323;
-  color: #fff;
-  font-family: sans-serif;
+    background-color: #232323;
+    color: #fff;
+    font-family: sans-serif;
 }
+
 main {
-  height: 3.5rem;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 1rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
 }
+
+main :first-child {
+    width: 25rem;
+}
+
 #message {
-  color: red;
+    color: red;
+    padding-top: 1rem;
+    font-size: 1rem;
 }
 
 .hits {
-  background-color: green;
+    background-color: green;
+    padding: 0.7rem;
+    font-size: 2rem;
 }
 
 .failures {
-  background-color: red;
+    background-color: red;
+    padding: 0.7rem;
+    font-size: 2rem;
 }
 
 .cuadrado {
-  width: 30%;
-  background: rgb(158, 150, 42);
-  padding-bottom: 10rem;
-  border-radius: 3px;
+    width: 30%;
+    background: rgb(158, 150, 42);
+    padding-bottom: 10rem;
+    border-radius: 3px;
 }
 
 .contenedor {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    list-style: none;
 }
 
 article {
-  gap: 1rem;
-  text-align: center;
-  padding-top: 5rem;
+    gap: 1rem;
+    text-align: center;
+    padding-top: 5rem;
 }
 
 button {
-  background-color: #46e;
-  font-size: 2.2rem;
-  letter-spacing: 1px;
-  border-radius: 10px;
-  color: #fff;
-  height: 15rem;
-  width: 70%;
-  border-radius: 30%;
-}
-
-ul {
-  width: 95%;
-  margin: auto;
-  padding-top: 1rem;
-}
-
-@media (min-width: 425px) {
-  button {
     background-color: #46e;
     font-size: 2.2rem;
     letter-spacing: 1px;
     border-radius: 10px;
     color: #fff;
     height: 15rem;
-    width: 15rem;
+    width: 70%;
     border-radius: 30%;
-  }
 }
+
+ul {
+    width: 95%;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+@media (min-width: 425px) {
+    button {
+        background-color: #46e;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        color: #fff;
+        height: 15rem;
+        width: 15rem;
+        border-radius: 30%;
+    }
+}
+
 footer {
-  text-align:center;
-  font-size: 1rem;
-  font-family: "Montserrat";
-  padding-top: 8rem;
-  font: oblique bold 120% cursive;
-  
-
-
-  
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Montserrat";
+    padding-top: 8rem;
+    font: oblique bold 120% cursive;
 }
+
 footer p {
-  padding-top: 5rem;
-  font-size: 0.5rem;
+    padding-top: 5rem;
+    font-size: 0.5rem;
 }
-
