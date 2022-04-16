@@ -1,33 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grupo H- Adivina el color</title>
-    <link rel="stylesheet" href="./portada.css" />
-</head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
-    <header>
-        <h1>ADIVINA EL COLOR</h1>
-    </header>
-    <main>
-        <h2>REGLAS DEL JUEGO</h2>
-        <div class="rules">
-            <ul>
-                <li>La persona jugadora tiene que hacer click en la caja de color correcto</li>
-                <li>Si se hace click en la caja correcta se acumula un punto en el contador de aciertos y si se falla se acumula en el de fallos.</li>
-                <li>Se gana la partida cuando se llega a 3 aciertos y se pierde si se llega a 3 fallos.</li>
-            </ul>
-        </div>
-    </main>
-
-    <div class="button">
-        <button>Iniciar Juego</button>
-    </div>
-    <script type="module" src="./proyecto3.js"></script>
-</body>
-
+  <body>
+    <section class="panel start hidden">
+      <h1>ADIVINA EL COLOR</h1>
+      <h2>Reglas del juego</h2>
+      <ul>
+        <li>
+          La persona jugadora tiene que hacer click en la caja de color correcto
+        </li>
+        <li>
+          Si se hace click en la caja correcta se acumula un punto en el
+          contador de aciertos y si se falla se acumula en el de fallos.
+        </li>
+        <li>
+          Se gana la partida cuando se llega a 3 aciertos y se pierde si se
+          llega a 3 fallos.
+        </li>
+      </ul>
+      <div>
+        <button>Game</button>
+      </div>
+      <a href="http://es.wikipedia.org/wiki/RGB"
+        >Clikea aquí y conoce los colores RGB
+      </a>
+    </section>
+    <section class="panel game hidden">
+      <header>
+        <h1 class="h1">Adivina el color</h1>
+        <h2 id="colorobjetivo"></h2>
+      </header>
+      <main>
+        <p id="message"></p>
+        <p class="hits">Aciertos</p>
+        <p class="failures">Fallos</p>
+      </main>
+      <ul class="contenedor">
+        <li class="cuadrado"></li>
+        <li class="cuadrado"></li>
+        <li class="cuadrado"></li>
+        <li class="cuadrado"></li>
+        <li class="cuadrado"></li>
+        <li class="cuadrado"></li>
+      </ul>
+      <button id="reset">Resultados</button>
+    </section>
+    <section class="panel results hidden">
+      Si has llegado hasta aquí has ganado o has fracasado estrepitosamente.
+      Parte en construcción.
+      <button>Página principal</button>
+    </section>
+    <script type="module" src="./script.js"></script>
+  </body>
 </html>
